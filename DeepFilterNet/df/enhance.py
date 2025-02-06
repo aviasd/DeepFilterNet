@@ -305,7 +305,7 @@ def setup_df_argument_parser(
         "--model-base-dir",
         "-m",
         type=str,
-        default=None,
+        default='DeepFilterNet3',
         help="Model directory containing checkpoints and config. "
         "To load a pretrained model, you may just provide the model name, e.g. `DeepFilterNet`. "
         "By default, the pretrained DeepFilterNet2 model is loaded.",
@@ -319,7 +319,7 @@ def setup_df_argument_parser(
         "--output-dir",
         "-o",
         type=str,
-        default=None,
+        default=r"C:\Users\userk\VSCode\DeepFilterNet\DeepFilterNet\assets\audio_output",
         help="Directory in which the enhanced audio files will be stored.",
     )
     parser.add_argument(
@@ -365,7 +365,7 @@ def run():
         "--noisy-dir",
         "-i",
         type=str,
-        default=None,
+        default=r"C:\Users\userk\VSCode\DeepFilterNet\DeepFilterNet\assets\audio_input",
         help="Input directory containing noisy audio files. Use instead of `noisy_audio_files`.",
     )
     parser.add_argument(
